@@ -1,0 +1,4 @@
+Hot Pink : #FFAEBC
+Tiffany Blue : #A0E7E5
+Mint : #B4F8C8
+Yellow : #FBE7C6

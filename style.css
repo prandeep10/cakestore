@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #FFB6C1;
+    /* Pastel Pink */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Buttons Used in The Website  */
+.btn {
+    background-color: #D2691E;
+    /* Chocolate Brown */
+    color: #fff;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #FF6347;
+    /* Cherry Red */
+}
+
+.btn2 {
+    background-color: #56b9b6;
+    /* Chocolate Brown */
+    color: #fff;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn2:hover {
+    background-color: #72d8d5;
+    /* Cherry Red */
+}
+
+.hero-section .left .btn,
+.btn2 {
+    padding: 20px 95px;
+    margin: 10px;
+}
+
+.logo img {
+    width: 100px;
+    /* Adjust the size according to your logo */
+    height: auto;
+}
+
+.logo h1 {
+    font-size: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 45px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #D2691E;
+    /* Chocolate Brown */
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+.nav-links a:hover {
+    color: #bb1359;
+}
+
+.menu-slider {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-button {
+    width: 30px;
+    height: 4px;
+    background-color: #D2691E;
+    /* Chocolate Brown */
+    margin: 3px 0;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #FFB6C1;
+        /* Pastel Pink */
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-slider {
+        display: flex;
+    }
+}
+
+
+/* Hero Section  */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    background: #f6e5c9;
+    height: 80vh;
+}
+
+.hero-section .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 680px;
+    padding: 90px;
+}
+
+.hero-section .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 680px;
+    padding: 90px;
+}
+
+.hero-section .left h2 {
+    font-size: 70px;
+    color: #ff7e94;
+}
+
+.hero-section .left p {
+    font-size: 50px;
+    color: #58b5b2;
+}
+
+
+/* 5 Star Reviews  */
+.star-rating {
+    color: #58b5b2;
+    /* Set the star color */
+    font-size: 2rem;
+    /* Adjust the size as needed */
+    display: inline-block;
+}
+
+.star-rating i {
+    display: inline-block;
+    animation: shine 2s infinite linear;
+    /* Adjust the animation duration as needed */
+    position: relative;
+}
+
+.star-rating i:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.star-rating i:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.star-rating i:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+.star-rating i:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+.star-rating i:nth-child(5) {
+    animation-delay: 1.6s;
+}
+
+@keyframes shine {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+/* Buttons in Hero Section  */
+.buttons {
+    margin-top: 40px;
+    display: flex;
+}
+
+.buttons a {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons a i {
+    padding: 4px;
+}
+
+
+.location {
+    display: flex;
+    align-items: center;
+    color: #58b5b2;
+    /* Text color */
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.location i {
+    font-size: 24px;
+    /* Icon size */
+    margin-right: 10px;
+    /* Spacing between icon and text */
+    color: #D2691E;
+    /* Icon color */
+    animation: glow 2s infinite alternate;
+    /* Glow effect */
+}
+
+/* Add a subtle underline effect on hover */
+.location a {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.location a:hover {
+    border-color: #58b5b2;
+    /* Underline color on hover */
+}
+
+@keyframes glow {
+    0% {
+        opacity: 1;
+        text-shadow: none;
+    }
+
+    100% {
+        opacity: 0.99;
+        text-shadow: 0 0 8px #D2691E;
+        /* Shadow color and size */
+    }
+}
+
+/* Image Box and Thumbs On Right  */
+.img-box img {
+    width: 750px;
+    height: 600px;
+}
+
+.thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumb li img {
+    width: 150px;
+}
+
+/* Keyframes for the floating animation */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(10px);
+    }
+}
+
+/* Apply the animation to list items with delays */
+.thumb li {
+    display: inline-block;
+    margin: 0 40px;
+    width: 100px;
+    height: 100px;
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Apply different delays to each list item */
+.thumb li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.thumb li:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.thumb li:nth-child(3) {
+    animation-delay: 4s;
+}
+
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin-top: 30px;
+}
+
+.feature h2 {
+    font-size: 25px;
+    color: #56b9b6;
+    margin-bottom: 30px;
+}
+
+
+
+.feature .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card img {
+    width: 340px;
+    height: 290px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    box-shadow: 4px 4px 10px #FFB6C1;;
+    border-radius: 30px;
+}
+
+.card:hover {
+    box-shadow: 4px 4px 20px #59d0cc;
+}
+
+
+
+/* Mobile Responsive  */
+
+@media(max-width:900px) {
+
+    .hero-section .left .btn,
+    .btn2 {
+        padding: 10px 25px;
+        margin: 10px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .hero-section .left h2 {
+        font-size: 25px;
+    }
+
+    .hero-section .left p {
+        font-size: 20px;
+    }
+
+    .hero-section .left div {
+        font-size: 20px;
+    }
+
+    .hero-section .right .img-box img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .thumb li {
+    display: inline-block;
+    margin: 0 40px;
+    width: 20px;
+    height: 20px;
+    }
+
+    .thumb li img{
+        width: 90px;
+    }
+
+    .hero-section .right{
+        height: 300px;
+        
+    }
+
+    .hero-section .left{
+        height: 300px;
+        margin-top: 150px;
+    }
+
+    .feature .btn, .btn2{
+        padding: 10 20px 10 20px;
+        font-size: 20px;
+       
+    }
+
+}
+
+button {
+    background-color: #ff7e94;;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #FFB6C1;
+    color: #fff;
+}

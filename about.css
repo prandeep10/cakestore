@@ -1,0 +1,39 @@
+/* Use the provided CSS styles with slight modifications */
+
+/* Header */
+header {
+    background-color: #FFB6C1;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 22px;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.about-content h2 {
+    color: #ff7e94;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #FFB6C1;
+    color: #fff;
+}

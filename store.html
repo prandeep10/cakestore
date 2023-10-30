@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="store.css">
+    <title>CakeWalk Store</title>
+        <!-- FontAwesome CDN  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>CakeWalk</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="" class="btn">Browse Shop</a>
+            <div class="menu-slider" id="slider">
+                <i class="fas fa-bars" id="menuBtn"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="feature">
+            <h2>Most Bought Cakes on CakeWalk</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/1.png" alt="">
+                    <a href="javascript:void(0);" class="btn2" onclick="orderCake(1242)">Order Now</a>
+                </div>
+                <div class="card">
+                    <img src="images/2.png" alt="">
+                    <a href="javascript:void(0);" class="btn2" onclick="orderCake(1243)">Order Now</a>
+                </div>
+                <div class="card">
+                    <img src="images/3.png" alt="">
+                    <a href="javascript:void(0);" class="btn2" onclick="orderCake(1244)">Order Now</a>
+                </div>
+                <div class="card">
+                    <img src="images/1.png" alt="">
+                    <a href="javascript:void(0);" class="btn2" onclick="orderCake(1245)">Order Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 CakeWalk</p>
+    </footer>
+
+    <script>
+        function orderCake(cakeId) {
+            const phoneNumber = '8399834759';
+            const message = `Hello CakeWalk, I want to order cake id #${cakeId}. Thank you for receiving.`;
+            const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.location.href = whatsappLink;
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

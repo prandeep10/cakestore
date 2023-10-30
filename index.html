@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CakeWalk</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FontAwesome CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Navbar  -->
+    <nav>
+        <div class="logo">
+            <h1>CakeWalk</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="" class="btn">Browse Shop</a>
+        <div class="menu-slider" id="slider">
+            <i class="fas fa-bars" id="menuBtn"></i>
+        </div>
+    </nav>
+
+
+<!-- Hero Section  -->
+<section class="hero-section">
+
+    <div class="left">
+        <p>Freshly Baked | 24 Hour Delivery</p>
+        <h2>The CakeWalk</h2>
+        <p>
+            <div class="star-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i> Reviews on Google
+            </div>
+        </p>
+        
+        <div class="location">
+            <i class="fas fa-map-marker-alt"></i> Located at : Jalukbari,AEC Road,Ghy-13
+        </div>
+        
+        <div class="buttons">
+            <a href="" class="btn"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="" class="btn2"><i class="fas fa-search"></i> Explore</a>
+        </div>
+    </div>
+    
+
+    <div class="right">
+
+        <div class="img-box">
+            <img src="images/1.png" alt="mainimg" id="slide">
+          </div>
+       
+    
+        <ul class="thumb">
+          <li><img src="images/1.png" alt="" onclick="chngimg('images/1.png')"></li>
+          <li><img src="images/2.png" alt="" onclick="chngimg('images/2.png')"></li>
+          <li><img src="images/3.png" alt="" onclick="chngimg('images/3.png')"></li>
+        </ul>
+    </div>
+</section>
+
+
+<!-- Featured Section  -->
+<section class="feature">
+    <h2>Most Bought Cakes on Cakewalk</h2>
+    <div class="cards">
+
+
+        <div class="card">
+            <img src="images/1.png" alt="">
+            <a href="" class="btn2">Order Now</a>
+        </div>
+
+
+        <div class="card">
+            <img src="images/2.png" alt="">
+            <a href="" class="btn2">Order Now</a>
+        </div>
+
+
+        <div class="card">
+            <img src="images/3.png" alt="">
+            <a href="" class="btn2">Order Now</a>
+        </div>
+
+
+        <div class="card">
+            <img src="images/1.png" alt="">
+            <a href="" class="btn2">Order Now</a>
+        </div>
+
+
+    </div>
+</section>
+
+
+
+
+</body>
+
+<script src="script.js"></script>
+<script>
+    function chngimg(anything) {
+        document.getElementById("slide").src = anything;
+      }
+      function togglemenu() {
+        var toggle = document.querySelector(".toggle");
+        var navigation = document.querySelector(".navigation");
+        toggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
+</script>
+</html>
