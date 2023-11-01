@@ -64,7 +64,7 @@ nav {
 
 .hero-section .left .btn,
 .btn2 {
-    padding: 20px 95px;
+
     margin: 10px;
 }
 
@@ -152,7 +152,7 @@ nav {
     align-items: center;
     justify-content: center;
     height: 680px;
-    padding: 90px;
+    padding: 50px;
 }
 
 .hero-section .left {
@@ -300,7 +300,7 @@ nav {
 }
 
 .thumb li img {
-    width: 150px;
+    width: 140px;
 }
 
 /* Keyframes for the floating animation */
@@ -396,11 +396,7 @@ nav {
 
 @media(max-width:900px) {
 
-    .hero-section .left .btn,
-    .btn2 {
-        padding: 10px 25px;
-        margin: 10px;
-    }
+
 
     .hero-section {
         flex-direction: column;
@@ -423,31 +419,110 @@ nav {
         height: 200px;
     }
 
+    .thumb{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
     .thumb li {
-    display: inline-block;
-    margin: 0 40px;
     width: 20px;
     height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     }
 
     .thumb li img{
-        width: 90px;
+        width: 80px;
     }
 
     .hero-section .right{
         height: 300px;
+        margin-bottom: 240px;
+        padding: 0px;
         
     }
 
     .hero-section .left{
         height: 300px;
-        margin-top: 150px;
+        margin-top: 250px;
+        padding: 20px;
     }
 
     .feature .btn, .btn2{
         padding: 10 20px 10 20px;
         font-size: 20px;
        
+    }
+
+    .card img{
+        width: 280px;
+        height: 220px;
+    }
+
+    .btn , .btn2{
+        padding: 10px 25px;
+        margin: 10px;
+    }
+
+    .hero-section .left .star-rating{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .hero-section .left p{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .hero-section .left .location{
+        font-size: 12px;
+        margin: 15px;
+        padding: 0px;
+    }
+
+    .hero-section .left h2{
+        font-size:34px;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .buttons .btn, .btn2{
+        width: 140px;
+        font-size: 14px;
+        padding: 0;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttons .btn2{
+        width: 140px;
+        font-size: 14px;
+        padding: 0;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav .btn{
+       display: none;
+    }
+
+    .thumb{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 }
